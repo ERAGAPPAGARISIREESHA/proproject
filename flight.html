@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FLIGHT TICKET BOOKING</title>
+</head>
+<body style="background-color: rgb(234, 234, 241);">
+    
+    <style>
+        
+    
+        
+ 
+ 
+ .logoff{
+    margin-top: 10px;
+    margin-left: 1150px;
+
+    width: 100px;
+    height: 30px;
+    border: 2px  rgb(0, 179, 255);
+    border-radius: 30px; 
+    background-color: rgb(0, 179, 255);
+   
+    text-align: center;
+    
+
+ }
+ .heading{
+    background-color:white;
+    width: auto;
+    height: 120px;
+    border:1px solid white ;
+    
+ }
+ 
+.fa-plane{ 
+    color: rgb(0, 179, 255);
+}
+.tooltip{
+    position: relative;
+    display: inline-block;
+    
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 65%;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.hidden {
+      position: absolute;
+      transform: translate(-50%,-50%);
+      
+      background:black;
+
+      opacity: 0; /* hide text */
+    }
+
+    .fa-plane:hover .hidden {
+      opacity: 1;   /* show text */
+    }
+.fa-bed{
+    color: rgb(150, 148, 148);
+    padding-top: 30px;
+
+}
+.fa-bus{
+    color: rgb(150, 148, 148);
+    padding-bottom: 50px;
+}
+.about{
+    text-decoration: none;
+    margin-left: 500px;
+}
+.support{
+    text-decoration: none;
+    margin-left: 1px;
+    
+}
+.fa-headphones{
+    margin-left: 80px;
+   
+    
+}
+.textbox{
+    height: 220px;
+    width: 600px;
+    margin-top: 30px;
+position: relative;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #8EBCE8 10%,white 80%);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.book{
+    border-radius: 10px;
+    color: black;
+    background-color:rgb(0, 179, 255) ;
+    text-align: center;
+    border: 1px rgb(0, 179, 255) ;
+    width: 130px;
+    height: 30px;
+
+
+}
+button:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    background-color: rgb(42, 41, 41);
+}
+
+.image{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+border:1px solid white;
+    border-radius: 10px;
+margin-left: 130px;
+}
+.search{
+    height: 30px;
+    color: #fff;
+    background-color: rgb(0, 179, 255) ;
+    border:rgb(0, 179, 255) ;
+    border-radius: 10px;
+}
+.login{
+    top: 30px;
+    margin-left: 900px;
+    margin-top: 150px;
+    height: 30px;
+    background-color:rgb(0, 179, 255 );
+    border: 1px solid rgb(0, 179, 255);
+    border-radius:10px ;
+}
+.message {
+  display: none;
+}
+@media screen and (max-width:500px) {
+    .heading{
+        width: 440px;
+
+    }
+    .textbox{
+        position: absolute;
+        width: 430px;
+        height: 250px;
+        top: 200px;
+
+    }
+    .textbox .book{
+        margin-left: 00px;
+    }
+    .image{
+        position: absolute;
+        top: 500px;
+        left: 0px;
+        margin-right: 400px;
+    }
+    .image img{
+        position: absolute;
+        left: 0;
+        width: 300px;
+        height: auto;
+    }
+    a .login{
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        
+    }
+    .logoff{
+        position: relative;
+        right: 830px;
+
+    }
+    .tooltip .about{
+        position: absolute;
+        left: 0px;
+        text-align: left;
+        bottom: 70px;
+        right: 500px;
+       
+    }
+   
+
+}
+    
+
+
+
+
+
+const hoverContainer = document.querySelector('.hover-container');
+const message = document.querySelector('.message');
+
+hoverContainer.addEventListener('mouseenter', () => {
+  message.style.display = 'block';
+});
+
+hoverContainer.addEventListener('mouseleave', () => {
+  message.style.display = 'none';
+});
+
+
+ 
+ 
+
+</style>
+     <div class="heading">  
+        
+
+       
+       <a href="logoff.html" ><button class="logoff"><center>  Log off</center></button></a>
+        <img src="https://i.ibb.co/Fsvx7ZX/Whats-App-Image-2023-06-21-at-16-04-23.jpg" width="90px"height="70px" style="border-bottom: 10px;">
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+        <div class="tooltip">
+        <a href="booking.html"><i class="fa fa-plane fa-2x" ></i></a> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <span class="tooltiptext">Flights Information</span></div>
+        <i  class="fa fa-bed fa-2x"></i> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i  class="fa fa-bus fa-2x"></i>&nbsp;&nbsp; &nbsp;&nbsp;
+        <div class="tooltip">
+        <a class="about" href="">aboutFLY-HIGH</a>
+        <span class="tooltiptext">Fly high.com is a renowned flight ticket booking website that offers a user-friendly platform to search for, compare prices, and book flights worldwide, along with other travel accommodations.</span></div>
+        <div class="tooltip">
+        <i  class="fa fa-headphones"></i>
+        <a class="support" href="">support</a>
+        <span class="tooltiptext">Do massage here to get our support</span></div>
+       
+        
+        
+        
+    </div>
+
+    <div class="textbox">
+        <h1>Welcome to Flight Booking System</h1>
+        <p>Bothered to book Flight tickets online ?</p>
+        <p>No worries,We're here to help you out with awsome discounts</p>
+       <center><a href="bookur.html"> <button class="book">Book Tickets</button></a></center>
+
+    </div>
+
+    <div class="image">
+
+        <img src="https://blog.aci.aero/wp-content/uploads/2020/07/shutterstock_795378952-1536x1024.jpg" width="640px" height="350px">
+    </div>
+
+
+   <a href="logg.html" ><button class="login">LOGIN/SIGN UP</button></a>
+   <div class="hover-container">
+    <span class="message">This is the text message</span>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vacation Center Registration</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Vacation Center Registration</h1>
+  </header>
+  
+  <main>
+    <section id="region-selection">
+      <h2>Select a region:</h2>
+      <select id="region" onchange="showCenters()">
+        <option value="">-- Select Region --</option>
+        <option value="region1">chittoor</option>
+        <option value="region2">ananthapur</option>
+        <option value="region3">kurnool</option>
+      </select>
+    </section>
+    
+    <section id="centers" style="display: none;">
+      <h2>Vacation Centers:</h2>
+      
+      <div id="center1" class="center" style="display: ;">
+        <h3>center 1</h3>
+        <p>Working Hours: 9:00 AM - 5:00 PM</p>
+        <button onclick="register('center1')">Register</button>
+      </div>
+      
+      <div id="center2" class="center" style="display: ;">
+        <h3> Center 2</h3>
+        <p>Working Hours: 8:00 AM - 4:00 PM</p>
+        <button onclick="register('center2')">Register</button>
+      </div>
+    </section>
+    
+    <section id="registration-form" style="display: none;">
+      <h2>Registration Form</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <button onclick="submitRegistration()">Submit</button>
+    </section>
+    
+    <section id="success-message" style="display: none;">
+      <h2>Registration Successful!</h2>
+      <p>Thank you for registering. Your registration details:</p>
+      <p id="registration-details"></p>
+    </section>
+  </main>
+ <a href="outpage.html"><button style="margin-left: 500px;">logout</button></a>
+</body>
+</html>
